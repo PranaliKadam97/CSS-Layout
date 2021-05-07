@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="css/grid.css" rel="stylesheet">
+    <style>
+        #grid-max-columns {
+            -ms-grid-columns: max-content;
+            grid-template-columns: -webkit-max-content;
+            grid-template-columns: max-content;
+            -ms-grid-rows: auto auto;
+            grid-template-rows: auto auto;
+        }
+
+        #grid-min-columns {
+            -ms-grid-columns: min-content;
+            grid-template-columns: -webkit-min-content;
+            grid-template-columns: min-content;
+            -ms-grid-rows: auto auto;
+            grid-template-rows: auto auto;
+        }
+
+        .grid div {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>max-content columns</h1>
+    <div class="grid" id="grid-max-columns">
+        <div class="row1-column1">row1 XXXXX XXXXXXX</div>
+        <div class="row2-column1">row2 XX XX XX XX XX XX XX XX</div>
+    </div>
+
+    <h1>min-content columns</h1>
+    <div class="grid" id="grid-min-columns">
+        <div class="row1-column1">row1 XXXXX XXXXXXX</div>
+        <div class="row2-column1">row2 XX XX XX XX XX XX XX XX</div>
+    </div>
+</body>
+</html>

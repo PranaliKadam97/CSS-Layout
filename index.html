@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+        <title>CSS Grid Layout Examples - Home</title>
+    </head>
+    <body style="padding-top: 50px;">
+        <a href="https://github.com/Igalia/css-grid-layout/"><img style="position: absolute; top: 0; right: 0; border: 0; z-index: 1050;" src="https://github-camo.global.ssl.fastly.net/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>
+
+        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">CSS Grid Layout Examples</a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li><a href="enable.html">Enable</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="jumbotron">
+            <div class="container">
+                <h1>CSS Grid Layout Examples</h1>
+                <p>Several examples showing different CSS Grid Layout use cases.</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="alert alert-danger"><span class="label label-danger">Deprecated</span> This website hasn't been maintained for a while, information can be oudated.</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading"><h3>Spec</h3></div>
+                        <div class="list-group">
+                            <a class="list-group-item" href="http://www.w3.org/TR/css-grid/"><h4>Working Draft (WD)</h4></a>
+                            <a class="list-group-item" href="http://dev.w3.org/csswg/css-grid/"><h4>Editor's Draft (ED)</h4></a>
+                        </div>
+                    </div>
+                    <div class="alert alert-info"><a href="https://github.com/w3c/csswg-drafts/issues?utf8=%E2%9C%93&q=is%3Aissue%20css-grid%20">Discussion at csswg-drafts GitHub repository</a><br><a href="http://www.w3.org/Search/Mail/Public/search?keywords=&hdr-1-name=subject&hdr-1-query=%5Bcss-grid%5D&index-grp=Public_FULL&index-type=t&type-index=www-style">Discussion at www-style mailing list</a></div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading"><h3>Implementation</h3></div>
+                        <table class="table">
+                            <tr>
+                                <th>Engine</th>
+                                <th>Meta-bug</th>
+                            </tr>
+                            <tr>
+                                <td>Blink</td>
+                                <td><a href="https://code.google.com/p/chromium/issues/detail?id=79180" class="label label-default">Issue 79180</a></td>
+                            </tr>
+                            <tr>
+                                <td>Gecko</td>
+                                <td><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=616605" class="label label-default">Bug 616605</a></td>
+                            </tr>
+                            <tr>
+                                <td>WebKit</td>
+                                <td><a href="https://bugs.webkit.org/show_bug.cgi?id=60731" class="label label-default">Bug 60731</a></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading"><h3>Examples</h3></div>
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <h4 class="list-group-item-heading">Simple grid example</h4>
+                                <p>
+                                    <a href="simple.html" class="label label-primary">example</a>
+                                    <a href="https://github.com/Igalia/css-grid-layout/blob/gh-pages/simple.html" class="label label-success">html</a>
+                                    <a href="https://github.com/Igalia/css-grid-layout/blob/gh-pages/simple.png" class="label label-info">screenshot</a>
+                                    <a href="http://www.w3.org/TR/css-grid/#track-sizing" class="label label-warning">spec</a>
+                                </p>
+                                <p>Very simple 2x2 grid with fixed breadths.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <h4 class="list-group-item-heading">Flexible breadth</h4>
+                                <p>
+                                    <a href="breadth.html" class="label label-primary">example</a>
+                                    <a href="https://github.com/Igalia/css-grid-layout/blob/gh-pages/breadth.html" class="label label-success">html</a>
+                                    <a href="https://github.com/Igalia/css-grid-layout/blob/gh-pages/breadth.png" class="label label-info">screenshot</a>
+                                    <a href="http://www.w3.org/TR/css-grid/#fr-unit" class="label label-warning">spec</a>
+                                </p>
+                                <p>Example with 3 columns. First and last columns are 200px width, and middle column should use the remaining space.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <h4 class="list-group-item-heading">Grid areas</h4>
+                                <p>
+                                    <a href="areas.html" class="label label-primary">example</a>
+                                    <a href="https://github.com/Igalia/css-grid-layout/blob/gh-pages/areas.html" class="label label-success">html</a>
+                                    <a href="https://github.com/Igalia/css-grid-layout/blob/gh-pages/areas.png" class="label label-info">screenshot</a>
+                                    <a href="http://www.w3.org/TR/css-grid/#grid-template-areas-property" class="label label-warning">spec</a>
+                                </p>
+                                <p>Example usage of grid areas.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <h4 class="list-group-item-heading">Named grid lines</h4>
+                                <p>
+                                    <a href="named-grid-lines.html" class="label label-primary">example</a>
+                                    <a href="https://github.com/Igalia/css-grid-layout/blob/gh-pages/named-grid-lines.html" class="label label-success">html</a>
+                                    <a href="https://github.com/Igalia/css-grid-layout/blob/gh-pages/named-grid-lines.png" class="label label-info">screenshot</a>
+                                    <a href="http://www.w3.org/TR/css-grid/#named-lines" class="label label-warning">spec</a>
+                                </p>
+                                <p>Example usage of named grid lines.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <h4 class="list-group-item-heading">Placement</h4>
+                                <p>
+                                    <a href="grid-placement.html" class="label label-primary">example</a>
+                                    <a href="https://github.com/Igalia/css-grid-layout/blob/gh-pages/grid-placement.html" class="label label-success">html</a>
+                                    <a href="https://github.com/Igalia/css-grid-layout/blob/gh-pages/grid-placement.png" class="label label-info">screenshot</a>
+                                    <a href="http://www.w3.org/TR/css-grid/#placement" class="label label-warning">spec</a>
+                                </p>
+                                <p>Example of several different examples of grid items placement.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <h4 class="list-group-item-heading"><tt>max-content</tt> and <tt>min-content</tt></h4>
+                                <p>
+                                    <a href="max-min-content.html" class="label label-primary">example</a>
+                                    <a href="https://github.com/Igalia/css-grid-layout/blob/gh-pages/max-min-content.html" class="label label-success">html</a>
+                                    <a href="https://github.com/Igalia/css-grid-layout/blob/gh-pages/max-min-content.png" class="label label-info">screenshot</a>
+                                    <a href="http://www.w3.org/TR/css-grid/#valuedef-max-content" class="label label-warning">spec</a>
+                                </p>
+                                <p>Example to show behavior of <tt>max-content</tt> and <tt>min-content</tt> in columns.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <h4 class="list-group-item-heading">Auto-placement form</h4>
+                                <p>
+                                    <a href="autoplacement-form.html" class="label label-primary">example</a>
+                                    <a href="https://github.com/Igalia/css-grid-layout/blob/gh-pages/autoplacement-form.html" class="label label-success">html</a>
+                                    <a href="https://github.com/Igalia/css-grid-layout/blob/gh-pages/autoplacement-form.png" class="label label-info">screenshot</a>
+                                    <a href="http://www.w3.org/TR/css-grid/#grid-auto-flow-property" class="label label-warning">spec</a>
+                                </p>
+                                <p>Example of auto-placement grid applied to a simple form. Span is not supported yet as you can see in the buttons row.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <h4 class="list-group-item-heading">Auto-placement span</h4>
+                                <p>Span is not supported yet as you can see in the example.</p>
+                                <p>
+                                    <a href="autoplacement-span.html" class="label label-primary">example</a>
+                                    <a href="https://github.com/Igalia/css-grid-layout/blob/gh-pages/autoplacement-span.html" class="label label-success">html</a>
+                                    <a href="https://github.com/Igalia/css-grid-layout/blob/gh-pages/autoplacement-span.png" class="label label-info">screenshot</a>
+                                    <a href="http://www.w3.org/TR/css-grid/#grid-auto-flow-property" class="label label-warning">spec</a>
+                                </p>
+                            </li>
+                            <li class="list-group-item">
+                                <h4 class="list-group-item-heading">z-index</h4>
+                                <p>
+                                    <a href="z-index.html" class="label label-primary">example</a>
+                                    <a href="https://github.com/Igalia/css-grid-layout/blob/gh-pages/z-index.html" class="label label-success">html</a>
+                                    <a href="https://github.com/Igalia/css-grid-layout/blob/gh-pages/z-index.png" class="label label-info">screenshot</a>
+                                    <a href="http://www.w3.org/TR/css-grid/#z-order" class="label label-warning">spec</a>
+                                </p>
+                                <p>Example with several overlapping grid items where painting order is defined by the implicit DOM order and different z-index values.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <h4 class="list-group-item-heading">Explicit Grid Shorthand: grid-template</h4>
+                                <p>
+                                    <a href="grid-template-shorthand.html" class="label label-primary">example</a>
+                                    <a href="https://github.com/Igalia/css-grid-layout/blob/gh-pages/grid-template-shorthand.html" class="label label-success">html</a>
+                                    <a href="https://github.com/Igalia/css-grid-layout/blob/gh-pages/grid-template-shorthand.png" class="label label-info">screenshot</a>
+                                    <a href="http://www.w3.org/TR/css-grid/#propdef-grid-template" class="label label-warning">spec</a>
+                                </p>
+                                <p>Example usage of the 'Explicit Grid' shorthand for setting grid-template-columns, grid-template-rows, and grid-template-areas in a single declaration.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <h4 class="list-group-item-heading">DOM order</h4>
+                                <p>
+                                    <a href="dom-order-issue.html" class="label label-primary">example</a>
+                                    <a href="https://github.com/Igalia/css-grid-layout/blob/gh-pages/dom-order-issue.html" class="label label-success">html</a>
+                                    <a href="https://github.com/Igalia/css-grid-layout/blob/gh-pages/dom-order-issue.png" class="label label-info">screenshot</a>
+                                    <a href="http://www.w3.org/TR/css-grid/#valuedef-max-content" class="label label-warning">spec</a>
+                                </p>
+                                <p>Items painting should respect DOM order.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <h4 class="list-group-item-heading">Repaint</h4>
+                                <p>
+                                    <a href="repaint-issue.html" class="label label-primary">example</a>
+                                    <a href="https://github.com/Igalia/css-grid-layout/blob/gh-pages/repaint-issue.html" class="label label-success">html</a>
+                                    <a href="https://github.com/Igalia/css-grid-layout/blob/gh-pages/repaint-issue.png" class="label label-info">screenshot</a>
+                                    <a href="http://www.w3.org/TR/css-grid/#valuedef-max-content" class="label label-warning">spec</a>
+                                </p>
+                                <p>Items that expands to several cells are painted more than once.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <h4 class="list-group-item-heading">Alignment</h4>
+                                <p>
+                                    <a href="basic-alignment.html" class="label label-primary">Basic Alignment example</a>
+                                    <a href="https://github.com/Igalia/css-grid-layout/blob/gh-pages/basic-alignment.html" class="label label-success">html</a>
+                                    <a href="https://github.com/Igalia/css-grid-layout/blob/gh-pages/basic-alignment.png" class="label label-info">screenshot</a>
+                                    <a href="http://dev.w3.org/csswg/css-grid/#alignment" class="label label-warning">spec</a>
+                                </p>
+                                <p>
+                                    <a href="full-alignment.html" class="label label-primary">Full Alignment example</a>
+                                    <a href="https://github.com/Igalia/css-grid-layout/blob/gh-pages/full-alignment.html" class="label label-success">html</a>
+                                    <a href="https://github.com/Igalia/css-grid-layout/blob/gh-pages/full-alignment.png" class="label label-info">screenshot</a>
+                                    <a href="http://dev.w3.org/csswg/css-align-3/#overview" class="label label-warning">spec</a>
+                                </p>
+                                <p>
+                                    <a href="self-alignment.html" class="label label-primary">Self Alignment example</a>
+                                    <a href="https://github.com/Igalia/css-grid-layout/blob/gh-pages/self-alignment.html" class="label label-success">html</a>
+                                    <a href="https://github.com/Igalia/css-grid-layout/blob/gh-pages/self-alignment.png" class="label label-info">screenshot</a>
+                                    <a href="http://dev.w3.org/csswg/css-align-3/#self-alignment" class="label label-warning">spec</a>
+                                </p>
+                                <p>
+                                    <a href="overflow-alignment.html" class="label label-primary">Overflow example</a>
+                                    <a href="https://github.com/Igalia/css-grid-layout/blob/gh-pages/overflow-alignment.html" class="label label-success">html</a>
+                                    <a href="https://github.com/Igalia/css-grid-layout/blob/gh-pages/overflow-alignment.png" class="label label-info">screenshot</a>
+                                    <a href="http://dev.w3.org/csswg/css-align-3/#overflow-alignment" class="label label-warning">spec</a>
+                                </p>
+                                <p>Examples of how to apply the CSS Box Alignment properties in the Grid Layout spec.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <h4 class="list-group-item-heading">Content Distribution Alignment</h4>
+                                <p>
+                                    <a href="content-position.html" class="label label-primary">Content Position example</a>
+                                    <a href="https://github.com/Igalia/css-grid-layout/blob/gh-pages/content-position.html" class="label label-success">html</a>
+                                    <a href="https://github.com/Igalia/css-grid-layout/blob/gh-pages/content-position.png" class="label label-info">screenshot</a>
+                                    <a href="http://dev.w3.org/csswg/css-align-3/#typedef-content-position" class="label label-warning">spec</a>
+                                </p>
+                                <p>
+                                    <a href="content-distribution.html" class="label label-primary">Content Distribution</a>
+                                    <a href="https://github.com/Igalia/css-grid-layout/blob/gh-pages/content-distribution.html" class="label label-success">html</a>
+                                    <a href="https://github.com/Igalia/css-grid-layout/blob/gh-pages/content-distribution.png" class="label label-info">screenshot</a>
+                                    <a href="http://dev.w3.org/csswg/css-align-3/#typedef-content-distribution" class="label label-warning">spec</a>
+                                </p>
+                                <p>
+                                    <a href="content-distribution-with-spans.html" class="label label-primary">Distribution with spans</a>
+                                    <a href="https://github.com/Igalia/css-grid-layout/blob/gh-pages/content-distribution-with-spans.html" class="label label-success">html</a>
+                                    <a href="https://github.com/Igalia/css-grid-layout/blob/gh-pages/content-distribution-with-spans.png" class="label label-info">screenshot</a>
+                                    <a href="http://dev.w3.org/csswg/css-align-3/#content-distribution" class="label label-warning">spec</a>
+                                </p>
+                                <p>
+                                    <a href="content-distribution-changes.html" class="label label-primary">Playing with alignment</a>
+                                    <a href="https://github.com/Igalia/css-grid-layout/blob/gh-pages/content-distribution-changes.html" class="label label-success">html</a>
+                                    <a href="https://github.com/Igalia/css-grid-layout/blob/gh-pages/content-distribution-changes.png" class="label label-info">screenshot</a>
+                                    <a href="http://dev.w3.org/csswg/css-align-3/#content-distribution" class="label label-warning">spec</a>
+                                </p>
+                                <p>Examples of how Content Distribution properties of the CSS Box Alignment spec apply on Grid Layout designs.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="alert alert-warning">Check <a href="enable.html">how to enable CSS Grid Layout in different browsers</a>.</div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading"><h3>Demos</h3></div>
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <h4 class="list-group-item-heading">Responsive grid</h4>
+                                <p>
+                                    <a href="responsive-grid.html" class="label label-primary">example</a>
+                                    <a href="https://github.com/Igalia/css-grid-layout/blob/gh-pages/responsive-grid.html" class="label label-success">html</a>
+                                    <a href="https://github.com/Igalia/css-grid-layout/blob/gh-pages/responsive-grid.png" class="label label-info">screenshot</a>
+                                </p>
+                                <p>Example grid that adapts itself to window size. Layout changes depending on window size (portrait/landscape). Some items are clickable and change their content.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <h4 class="list-group-item-heading">Gallery</h4>
+                                <p>
+                                    <a href="gallery.html" class="label label-primary">example</a>
+                                    <a href="https://github.com/Igalia/css-grid-layout/blob/gh-pages/gallery.html" class="label label-success">html</a>
+                                    <a href="https://github.com/Igalia/css-grid-layout/blob/gh-pages/gallery.png" class="label label-info">screenshot</a>
+                                </p>
+                                <p>Example app using grid layout. Responsive design depending on window size.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <h4 class="list-group-item-heading">Auto-placement Algorithm</h4>
+                                <p>
+                                    <a href="autoplacement.html" class="label label-primary">example</a>
+                                    <a href="https://github.com/Igalia/css-grid-layout/blob/gh-pages/autoplacement.html" class="label label-success">html</a>
+                                    <a href="https://github.com/Igalia/css-grid-layout/blob/gh-pages/autoplacement.png" class="label label-info">screenshot</a>
+                                    <a href="http://dev.w3.org/csswg/css-grid/#auto-placement-algo" class="label label-warning">spec</a>
+                                </p>
+                                <p>Auto-placement algorithm demo. Allow to new add grid items in different positions in order to check how the algorithm works. Also, includes the possibility to change between the different <code>grid-auto-flow</code> property values.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <h4 class="list-group-item-heading">Alignment demo (<code>justify|align-items</code>)</h4>
+                                <p>
+                                    <a href="alignment-demo.html" class="label label-primary">example</a>
+                                    <a href="https://github.com/Igalia/css-grid-layout/blob/gh-pages/alignment-demo.html" class="label label-success">html</a>
+                                    <a href="https://github.com/Igalia/css-grid-layout/blob/gh-pages/alignment-demo.png" class="label label-info">screenshot</a>
+                                    <a href="http://dev.w3.org/csswg/css-grid/#alignment" class="label label-warning">spec</a>
+                                </p>
+                                <p>Very simple demo that allows to play with different values for <code>justify-items</code> and <code>align-items</code> properties and check the results with different grid items.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <h4 class="list-group-item-heading">Alignment demo (<code>justify|align-self</code>)</h4>
+                                <p>
+                                    <a href="demo-alignment.html" class="label label-primary">example</a>
+                                    <a href="https://github.com/Igalia/css-grid-layout/blob/gh-pages/demo-alignment.html" class="label label-success">html</a>
+                                    <a href="https://github.com/Igalia/css-grid-layout/blob/gh-pages/demo-alignment.png" class="label label-info">screenshot</a>
+                                    <a href="http://dev.w3.org/csswg/css-grid/#alignment" class="label label-warning">spec</a>
+                                </p>
+                                <p>Another alignment demo, this time it changes the value of <code>justify-self</code> and <code>align-self</code> properties of the items in each track (column/row).</p>
+                            </li>
+                            <li class="list-group-item">
+                                <h4 class="list-group-item-heading">Calendar demo</h4>
+                                <p>
+                                    <a href="calendar.html" class="label label-primary">example</a>
+                                    <a href="https://github.com/Igalia/css-grid-layout/blob/gh-pages/calendar.html" class="label label-success">html</a>
+                                    <a href="https://github.com/Igalia/css-grid-layout/blob/gh-pages/calendar.png" class="label label-info">screenshot</a>
+                                </p>
+                                <p>Example of a calendar created using CSS Grid Layout. The days are added with JavaScript and only the column of the first day is set (depending on the day of the week) and the rest of them are placed automatically. If you double-click in the page, the alignment of the days numbers is changed.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <h4 class="list-group-item-heading">Another responsive grid</h4>
+                                <p>
+                                    <a href="treasure-island.html" class="label label-primary">example</a>
+                                    <a href="https://github.com/Igalia/css-grid-layout/blob/gh-pages/treasure-island.html" class="label label-success">html</a>
+                                    <a href="https://github.com/Igalia/css-grid-layout/blob/gh-pages/treasure-island.png" class="label label-info">screenshot</a>
+                                </p>
+                                <p>Example grid that adapts itself to window size. Layout changes depending on window size using media queries.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
